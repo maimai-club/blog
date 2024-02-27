@@ -1,0 +1,23 @@
+{
+  "name": "vitepress-blog",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "portsAttributes": {
+    "5173": {
+      "label": "Application"
+    }
+  },
+  "forwardPorts": [
+    5173
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Vue.volar",
+        "Vue.vscode-typescript-vue-plugin"
+      ]
+    }
+  }
+}
