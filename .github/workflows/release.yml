@@ -8,6 +8,9 @@ jobs:
   create-release-tag:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       TZ: 'Asia/Tokyo'
