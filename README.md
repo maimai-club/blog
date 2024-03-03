@@ -20,8 +20,6 @@ develop \
 ## ライセンス
 
 AGPL3.0
-{% important %}
-Important: ライセンスは将来的に変更される可能性があります
-
-#11 を確認してね
-{% endimportant %}
+> [!IMPORTANT]
+> ライセンスは将来的に変更される可能性があります \
+> [#11](https://github.com/maimai-club/blog/issues/11) を確認してね
