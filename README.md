@@ -20,6 +20,8 @@ develop \
 ## ライセンス
 
 AGPL3.0
-> [!IMPORTANT]
-> ライセンスは将来的に変更される可能性があります \
-> #11 を確認してね
+{% important %}
+Important: ライセンスは将来的に変更される可能性があります
+
+#11 を確認してね
+{% endimportant %}
