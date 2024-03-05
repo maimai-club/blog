@@ -1,11 +1,11 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
+layout: docs
 
 hero:
   name: "maimai-blog"
-  text: "kore ha blog desu"
-  tagline: My great project tagline
+  text: ""
+  tagline: バイクとかサーバーとか色々 # キャッチフレーズ
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
