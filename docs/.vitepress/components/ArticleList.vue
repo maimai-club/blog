@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ContentData, withBase } from 'vitepress'
-import { data as articles } from '../articles.data.ts'
+import { data as articles } from '../articles.data'
 const newArticles: ContentData[] = [...articles]// .reverse().slice(0, 6)
 console.log(articles)
 console.log(newArticles)
