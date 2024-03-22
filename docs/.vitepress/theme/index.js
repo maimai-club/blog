@@ -5,13 +5,13 @@ import { useData } from 'vitepress'
 
 export default {
   extends: DefaultTheme,
-  Layout() {
+  Layout () {
     return h(DefaultTheme.Layout, null, {
       'doc-after': () => {
         const { page } = useData()
         console.log(page.value.relativePath)
-        return h(PostFooter)
         if (page.value.relativePath.match(/^articles\/(?!index.md)/)) {
+          console.log('一致')
           return h(PostFooter)
         }
       }
