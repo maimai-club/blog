@@ -22,7 +22,7 @@ export default createContentLoader('articles/*.md', { // docsからの相対パ�
     return raw.map(({ url, frontmatter, excerpt }) => ({
       title: frontmatter.title,
       url,
-      relativePath: url.replace(/^\/articles\//g, 'articles/') + '.md',
+      relativePath: url.replace(/\.html$/, '') + '.md',
       author: frontmatter.author,
       tags: frontmatter.tags,
       excerpt
