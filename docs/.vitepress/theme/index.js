@@ -9,7 +9,6 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'doc-after': () => {
         const { page } = useData()
-        console.log(page.value.relativePath)
         if (page.value.relativePath.match(/^articles\/(?!index.md)/)) {
           return h(PostFooter)
         }
