@@ -1,4 +1,5 @@
 import { createContentLoader } from 'vitepress'
+import defineConfig from './config.mjs'
 
 interface Article {
   title: string
@@ -21,8 +22,8 @@ export default createContentLoader('articles/*.md', { // docsからの相対パ�
   transform (raw): Article[] {
     return raw.map(({ url, frontmatter, excerpt }) => ({
       title: frontmatter.title,
-      url,
-      relativePath: url.replace(/\.html$/, '') + '.md',
+      url: defineConfig.base + url.replace(/^\/+/, ''),
+      relativePath: url.replace(/^\/+/, '').replace(/\.html$/, '') + '.md',
       author: frontmatter.author,
       tags: frontmatter.tags,
       excerpt

@@ -11,7 +11,6 @@ export default {
         const { page } = useData()
         console.log(page.value.relativePath)
         if (page.value.relativePath.match(/^articles\/(?!index.md)/)) {
-          console.log('一致')
           return h(PostFooter)
         }
       }

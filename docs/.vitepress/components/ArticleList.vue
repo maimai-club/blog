@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { withBase } from 'vitepress'
 import { Article, data as articles } from '../articles.data'
 const newArticles: Article[] = [...articles]// .reverse().slice(0, 6)
 console.log(articles)
@@ -15,7 +14,7 @@ console.log(newArticles)
         :key="idx"
       >
         <p v-if="article.title">
-          タイトル：<a :href="withBase(article.url)">{{ article.title }}</a>
+          タイトル：<a :href="article.url">{{ article.title }}</a>
         </p>
         <p v-if="article.author">
           著者：{{ article.author }}
