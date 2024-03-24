@@ -15,7 +15,8 @@ interface Article {
 }
 
 declare const data: Article[]
-export { data, Article }
+export { data }
+export type { Article }
 
 export default createContentLoader('articles/*.md', { // docsからの相対パスを指定する
   includeSrc: true,
