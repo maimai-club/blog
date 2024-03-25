@@ -1,13 +1,21 @@
 <script lang="ts" setup>
-import VPFeature from "../../../../../node_modules/vitepress/dist/client/theme-default/components/VPFeature.vue"
+import VPFeatures, { Feature } from "../../../../../node_modules/vitepress/dist/client/theme-default/components/VPFeatures.vue"
 import { authors } from '../authors'
+
+const featuredAuthors: Feature[] = []
+
+for (const author of authors) {
+  featuredAuthors.push({
+    title: author.name,
+    icon: author.icon,
+    details: author.description
+  })
+}
 </script>
 
 <template>
   <div>
-    <div v-for="(author, idx) in authors" :key="idx">
-      <VPFeature :title="author.name" :icon="author.icon" :details="author.description" />
-    </div>
+    <VPFeatures :features="featuredAuthors" />
     <!-- <ul>
       <li v-for="(author, idx) in authors" :key="idx">
         <p v-if="author.name">
