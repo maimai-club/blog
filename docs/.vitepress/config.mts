@@ -18,7 +18,7 @@ export default defineConfig({
       {
         items: [
           { text: 'Home', link: '/' },
-          { text: 'About', link: '/about' },
+          { text: 'About', link: '#' },
           { text: 'Authors', link: '/authors' },
           { text: 'Articles', link: '#' }
         ]
