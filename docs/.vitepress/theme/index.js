@@ -2,7 +2,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import PostFooter from './PostFooter.vue'
 import { useData } from 'vitepress'
-import './tailwind.css'
+import './tailwind.postcss'
 
 export default {
   extends: DefaultTheme,

@@ -22,5 +22,11 @@
     "typescript": "^5.4.2",
     "vitepress": "^1.0.0-rc.44",
     "vue-eslint-parser": "^9.4.2"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
   }
 }
