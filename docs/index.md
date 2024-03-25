@@ -8,6 +8,9 @@ title: 'トップページ'
 
 <script setup>
   import ArticleList from '.vitepress/components/ArticleList.vue'
+  import { data as articles } from '.vitepress/articles.data'
 </script>
 
-<ArticleList />
+# 新着記事
+
+<ArticleList :articles="articles"/>
