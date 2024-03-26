@@ -20,7 +20,7 @@ export default defineConfig({
           { text: 'Home', link: '/' },
           { text: 'About', link: '#' },
           { text: 'Authors', link: '/authors' },
-          { text: 'Articles', link: '#' }
+          { text: 'Articles', link: '/articles' }
         ]
       }
     ],
