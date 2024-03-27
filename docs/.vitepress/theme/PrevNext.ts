@@ -4,17 +4,20 @@ import { useData } from 'vitepress'
 
 export function usePrevNext () {
   const { page } = useData()
+  const sorted = [...articles].sort((a, b) => {
+    return -(new Date(a.date).getTime() - new Date(b.date).getTime())
+  })
   return computed(() => {
     let prev: Article | null = null
     let next: Article | null = null
 
-    for (let i = 0; i < articles.length; i++) {
-      if (articles[i].relativePath === page.value.relativePath) {
+    for (let i = 0; i < sorted.length; i++) {
+      if (sorted[i].relativePath === page.value.relativePath) {
         if (i >= 1) {
-          next = articles[i - 1]
+          prev = sorted[i - 1]
         }
-        if (i <= articles.length - 2) {
-          prev = articles[i + 1]
+        if (i <= sorted.length - 2) {
+          next = sorted[i + 1]
         }
         break
       }
