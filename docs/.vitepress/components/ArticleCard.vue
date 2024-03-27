@@ -1,17 +1,17 @@
 <script lang="ts" setup>
 import { Article } from '../articles.data'
-import { Author, getAuthorById } from '../authors'
+import { getAuthorById } from '../authors'
 
 const props = defineProps<{
   article: Article
 }>()
 
-const author: Author = getAuthorById(props.article.author)
+const author = getAuthorById(props.article.author)
 </script>
 
 <template>
   <div class="border border-gray-300 rounded-lg my-4">
-    <div class="px-7 py-3">
+    <div class="px-7 py-3" v-if="author">
       <div class="my-1 flex items-center gap-x-3" v-if="author.name">
         <img class="rounded-full aspect-square max-h-9" v-if="author.icon" :src="author.icon" />
         <span class="text-xl">{{ author.name }}</span>
