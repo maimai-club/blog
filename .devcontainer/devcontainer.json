@@ -16,11 +16,12 @@
     "vscode": {
       "extensions": [
         "Vue.volar",
-        "Vue.vscode-typescript-vue-plugin",
         "mosapride.zenkaku",
         "oderwat.indent-rainbow",
         "davidanson.vscode-markdownlint",
-        "ms-vsliveshare.vsliveshare"
+        "ms-vsliveshare.vsliveshare",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
       ]
     }
   }
