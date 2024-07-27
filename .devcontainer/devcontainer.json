@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "remoteUser": "node",
+  //"remoteUser": "node",
   "portsAttributes": {
     "5173": {
       "label": "Application"

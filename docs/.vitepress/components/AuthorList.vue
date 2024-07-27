@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import VPFeatures, { Feature } from "../../../../../node_modules/vitepress/dist/client/theme-default/components/VPFeatures.vue"
+import VPFeatures, { Feature } from "vitepress/dist/client/theme-default/components/VPFeatures.vue"
 import { authors } from '../authors'
 
 const featuredAuthors: Feature[] = []
